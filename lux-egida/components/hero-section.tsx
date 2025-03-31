@@ -42,7 +42,7 @@ export function HeroSection() {
             <div className="absolute -right-6 -bottom-6 h-full w-full rounded-2xl border border-primary-200 bg-primary-50"></div>
             <div className="relative overflow-hidden rounded-2xl border border-primary-100 shadow-elegant">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                  src="https://placehold.co/800x600/f0f1f7/1e2756?text=Luxury+Financial+Advisory"
                 alt="Luxury financial advisory"
                 width={800}
                 height={600}
