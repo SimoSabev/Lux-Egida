@@ -21,7 +21,7 @@ export function HeroSection() {
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
               <a
-                href="#services"
+                href="#"
                 className="group inline-flex h-14 items-center justify-center rounded-md border border-primary-200 bg-white px-8 text-sm font-medium text-primary transition-all duration-300 hover:border-primary-300 hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2"
               >
                 <span className="relative">
@@ -30,7 +30,7 @@ export function HeroSection() {
                 </span>
               </a>
               <a
-                href="#experience"
+                href="#"
                 className="inline-flex h-14 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-white shadow-md transition-all duration-300 hover:bg-primary-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2"
               >
                 Our Expertise
