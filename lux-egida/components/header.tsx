@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Menu, X } from "lucide-react"
+import logo from "../public/Screenshot 2025-03-31 2010101.png"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -26,7 +27,7 @@ export function Header() {
     >
       <div className="container flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center">
-          <Image src="/logo.png" alt="Lux Egida Advisors" width={180} height={60} className="h-12 w-auto" />
+          <Image src={logo.src} alt="Lux Egida Advisors" width={320} height={160} className="h-12 w-auto" />
         </Link>
         <nav className="hidden md:flex md:items-center md:gap-8">
           <Link
