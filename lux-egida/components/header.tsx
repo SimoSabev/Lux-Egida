@@ -2,9 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { Menu, X } from "lucide-react"
-import logo from "../public/Screenshot 2025-03-31 2010101.png"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -27,23 +25,31 @@ export function Header() {
     >
       <div className="container flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center">
-          <Image src={logo.src} alt="Lux Egida Advisors" width={320} height={160} className="h-12 w-auto" />
+          <span className="text-xl font-light tracking-widest text-primary">
+            <span className="font-semibold">LUXURY</span> ASSET MANAGEMENT
+          </span>
         </Link>
         <nav className="hidden md:flex md:items-center md:gap-8">
           <Link
-            href="#services"
+            href="#philosophy"
             className="text-sm font-medium text-gray-600 transition-all duration-200 hover:text-primary hover:underline hover:underline-offset-8"
           >
-            Services
+            Philosophy
           </Link>
           <Link
-            href="#experience"
+            href="#about"
             className="text-sm font-medium text-gray-600 transition-all duration-200 hover:text-primary hover:underline hover:underline-offset-8"
           >
-            Experience
+            About
           </Link>
           <Link
-            href="mailto:contact@luxegida.com"
+            href="#expertise"
+            className="text-sm font-medium text-gray-600 transition-all duration-200 hover:text-primary hover:underline hover:underline-offset-8"
+          >
+            Expertise
+          </Link>
+          <Link
+            href="#contact"
             className="ml-4 rounded-md border border-primary px-5 py-2 text-sm font-medium text-primary transition-all duration-200 hover:bg-primary hover:text-white"
           >
             Contact
@@ -61,21 +67,28 @@ export function Header() {
         <div className="absolute w-full bg-white shadow-elegant-lg md:hidden">
           <nav className="container flex flex-col space-y-6 px-4 py-8">
             <Link
-              href="#services"
+              href="#philosophy"
               className="text-lg font-medium text-primary transition-colors hover:text-primary-600"
               onClick={() => setIsMenuOpen(false)}
             >
-              Services
+              Philosophy
             </Link>
             <Link
-              href="#experience"
+              href="#about"
               className="text-lg font-medium text-primary transition-colors hover:text-primary-600"
               onClick={() => setIsMenuOpen(false)}
             >
-              Experience
+              About
             </Link>
             <Link
-              href="mailto:contact@luxegida.com"
+              href="#expertise"
+              className="text-lg font-medium text-primary transition-colors hover:text-primary-600"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Expertise
+            </Link>
+            <Link
+              href="#contact"
               className="inline-flex w-full items-center justify-center rounded-md border border-primary px-5 py-3 text-base font-medium text-primary transition-all duration-200 hover:bg-primary hover:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -87,4 +100,3 @@ export function Header() {
     </header>
   )
 }
-
