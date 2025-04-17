@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden bg-white pt-20">
+    <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden bg-slate-100 pt-20">
       <div className="absolute -right-64 -top-64 h-[500px] w-[500px] rounded-full bg-primary-50 blur-3xl opacity-50 animate-pulse animate-infinite animate-duration-[10000ms] animate-ease-in-out"></div>
       <div className="absolute -bottom-32 -left-32 h-[300px] w-[300px] rounded-full bg-secondary-50 blur-3xl opacity-50 animate-pulse animate-infinite animate-duration-[15000ms] animate-ease-in-out"></div>
 
@@ -30,7 +30,7 @@ export function HeroSection() {
               </a>
               <a
                 href="#contact"
-                className="inline-flex h-14 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-white shadow-md transition-all duration-300 hover:bg-primary-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2"
+                className="inline-flex h-14 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-white shadow-md transition-all duration-300 hover:bg-[#111733] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2"
               >
                 Contact Us
               </a>
