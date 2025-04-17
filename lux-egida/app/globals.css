@@ -140,30 +140,6 @@
       transform: translateX(0);
     }
   }
-  @keyframes float-slow {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
-  }
-  .animate-float-slow {
-    animation: float-slow 6s ease-in-out infinite;
-  }
-  @keyframes shimmer {
-    0% { background-position: -500px 0; }
-    100% { background-position: 500px 0; }
-  }
-  .animate-shimmer {
-    background-image: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
-    background-size: 1000px 100%;
-    animation: shimmer 2.5s linear infinite;
-  }
-
-  @keyframes wiggle {
-    0%, 100% { transform: rotate(-1deg); }
-    50% { transform: rotate(1deg); }
-  }
-  .group-hover\:animate-wiggle:hover {
-    animation: wiggle 0.3s ease-in-out;
-  }
 
   .animate-fade-up {
     animation: fade-up 1s ease-out forwards;
