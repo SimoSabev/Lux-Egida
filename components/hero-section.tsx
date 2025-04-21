@@ -1,4 +1,5 @@
 import Image from "next/image"
+import image from "@/public/image1.jpg"
 
 export function HeroSection() {
   return (
@@ -47,7 +48,7 @@ export function HeroSection() {
               <div className="absolute -right-6 -bottom-6 h-full w-full rounded-2xl border border-primary-200 bg-primary-50"></div>
               <div className="relative overflow-hidden rounded-2xl border border-primary-100 shadow-elegant group">
                 <Image
-                    src="https://placehold.co/800x600/f0f1f7/1e2756?text=Luxury+Asset+Management"
+                    src={image.src}
                     alt="Luxury asset management"
                     width={800}
                     height={600}

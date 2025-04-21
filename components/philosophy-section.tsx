@@ -1,6 +1,8 @@
 "use client"
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import image from "@/public/image2.jpg"
+
 
 export function PhilosophySection() {
   const [isInView, setIsInView] = useState(false);
@@ -59,7 +61,7 @@ export function PhilosophySection() {
               <div className="absolute -right-4 -bottom-4 h-full w-full rounded-xl border border-primary-200 bg-primary-50"></div>
               <div className="relative overflow-hidden rounded-xl border border-primary-100 shadow-elegant">
                 <Image
-                    src="https://placehold.co/800x600/f0f1f7/1e2756?text=Luxury+Yacht"
+                    src={image.src}
                     alt="Luxury yacht"
                     width={800}
                     height={600}
