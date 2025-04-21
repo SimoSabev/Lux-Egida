@@ -87,7 +87,7 @@ export function TestimonialsSection() {
               </div>
               <div className="text-center md:text-left">
                 <p className="mb-8 text-lg italic text-gray-700 md:text-xl lg:text-2xl">
-                  "{testimonials[currentIndex].quote}"
+                  &quot;{testimonials[currentIndex].quote}&quot;
                 </p>
                 <div className="inline-block border-t border-primary-200 pt-4">
                   <p className="font-medium text-primary-700">{testimonials[currentIndex].author}</p>
