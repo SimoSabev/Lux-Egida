@@ -15,7 +15,7 @@ export function HeroSection() {
               <div className="mb-4 inline-block rounded-full bg-primary-50 px-4 py-1 text-sm font-medium text-primary animate-fade-up animate-once animate-duration-700 animate-delay-100 animate-ease-in-out">
                 Luxury Asset Management
               </div>
-              <h1 className="mb-6 font-serif text-4xl font-light tracking-tight text-primary sm:text-5xl md:text-6xl animate-fade-up animate-once animate-duration-700 animate-delay-200 animate-ease-in-out">
+              <h1 className="mb-6 font-serif text-4xl font-light tracking-tight text-primary   animate-fade-up animate-once animate-duration-700 animate-delay-200 animate-ease-in-out">
                 Your Strategic Partner in{" "}
                 <span className="font-medium">Luxury Asset Management</span>
               </h1>
