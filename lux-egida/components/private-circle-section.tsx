@@ -47,15 +47,6 @@ export function PrivateCircleSection() {
                         : "opacity-0"
                 }`}
             ></div>
-            <p
-                className={`mb-16 text-gray-600 md:text-lg transition-opacity duration-700 ${
-                    isInView
-                        ? "animate-fade-up animate-once animate-duration-700 animate-delay-300 animate-ease-in-out"
-                        : "opacity-0"
-                }`}
-            >
-              A Club Without a Name, Built on Trust
-            </p>
           </div>
 
           <div

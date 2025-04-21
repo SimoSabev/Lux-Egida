@@ -45,13 +45,6 @@ export function AboutSection() {
                     isInView ? 'animate-fade-up' : ''
                 }`}
             ></div>
-            <p
-                className={`mb-16 text-gray-600 md:text-lg ${
-                    isInView ? 'animate-fade-up' : ''
-                }`}
-            >
-              We Don&apos;t Just Represent. We Safeguard.
-            </p>
           </div>
 
           <div className="grid gap-12 md:grid-cols-2">

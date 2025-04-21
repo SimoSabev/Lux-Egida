@@ -46,13 +46,6 @@ export function PhilosophySection() {
                     isInView ? 'animate-fade-up' : ''
                 }`}
             ></div>
-            <p
-                className={`mb-16 text-gray-600 md:text-lg ${
-                    isInView ? 'animate-fade-up' : ''
-                }`}
-            >
-              Experience. Insight. Discretion.
-            </p>
           </div>
 
           <div className="grid gap-12 md:grid-cols-2">

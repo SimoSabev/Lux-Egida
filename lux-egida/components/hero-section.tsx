@@ -10,7 +10,7 @@ export function HeroSection() {
         <div className="container relative px-4 py-24 md:px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             {/* Left side */}
-            <div className="mx-auto max-w-3xl text-center lg:text-left">
+            <div className="mx-auto max-w-full text-center lg:text-left">
               <div className="mb-4 inline-block rounded-full bg-primary-50 px-4 py-1 text-sm font-medium text-primary animate-fade-up animate-once animate-duration-700 animate-delay-100 animate-ease-in-out">
                 Luxury Asset Management
               </div>

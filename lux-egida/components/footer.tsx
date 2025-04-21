@@ -30,16 +30,12 @@ export function Footer() {
                         <div className={"w-full flex justify-between items-center"}>
                             <div className="flex flex-col gap-3 ml-5 text-sm text-slate-300">
                                 <div className="flex items-center gap-2 hover:text-white transition-colors">
-                                    <Phone className="h-4 w-4 text-secondary"/>
-                                    <span>+1 (555) 123-4567</span>
-                                </div>
-                                <div className="flex items-center gap-2 hover:text-white transition-colors">
                                     <Mail className="h-4 w-4 text-secondary"/>
-                                    <span>contact@luxuryassetmanagement.com</span>
+                                    <span>info@luxegida.com</span>
                                 </div>
                                 <div className="flex items-center gap-2 hover:text-white transition-colors mt-1">
                                     <MapPin className="h-4 w-4 text-secondary"/>
-                                    <span>Monaco • London • New York • Dubai</span>
+                                    <span>Monaco • Palma De Mallorca • Bulgaria</span>
                                 </div>
                             </div>
                             <div
