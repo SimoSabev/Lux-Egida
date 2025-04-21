@@ -3,7 +3,7 @@ const nextConfig = {
     images: {
         dangerouslyAllowSVG: true,
         contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-        domains: ['placehold.co'], // allowlist the domain
+        domains: ['placehold.co'],
     },
 };
 
