@@ -1,89 +1,74 @@
 "use client"
-import { useEffect, useState } from "react";
-import Image from "next/image";
+import {useEffect, useState} from "react";
 
 export function PrivateCircleSection() {
-  const [isInView, setIsInView] = useState(false);
+    const [isInView, setIsInView] = useState(false);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            setIsInView(entry.isIntersecting);
-          });
-        },
-        { threshold: 0.2 } // Trigger when 20% of the section is in view
-    );
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    setIsInView(entry.isIntersecting);
+                });
+            },
+            {threshold: 0.2}
+        );
 
-    const section = document.getElementById('private-circle');
-    if (section) {
-      observer.observe(section);
-    }
+        const section = document.getElementById('private-circle');
+        if (section) {
+            observer.observe(section);
+        }
 
-    return () => {
-      if (section) {
-        observer.unobserve(section);
-      }
-    };
-  }, []);
+        return () => {
+            if (section) {
+                observer.unobserve(section);
+            }
+        };
+    }, []);
 
-  return (
-      <section id="private-circle" className="bg-slate-100 py-24 md:py-32">
-        <div className="container px-4 md:px-6">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2
-                className={`mb-4 font-serif text-3xl font-light text-primary sm:text-4xl md:text-5xl transition-opacity duration-700 ${
-                    isInView
-                        ? "animate-fade-up animate-once animate-duration-700 animate-delay-100 animate-ease-in-out"
-                        : "opacity-0"
-                }`}
-            >
-              <span className="font-medium">A Private Circle</span> of Principals
-            </h2>
-            <div
-                className={`mx-auto mb-16 h-1 w-24 bg-secondary transition-opacity duration-700 ${
-                    isInView
-                        ? "animate-fade-up animate-once animate-duration-700 animate-delay-200 animate-ease-in-out"
-                        : "opacity-0"
-                }`}
-            ></div>
-          </div>
+    return (
+        <section id="private-circle" className="bg-slate-100 py-12 sm:py-16 md:py-24 lg:py-32">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="mx-auto max-w-3xl text-center">
+                    <h2
+                        className={`mb-4 font-serif text-2xl font-light text-primary sm:text-3xl md:text-4xl lg:text-5xl transition-opacity duration-700 ${
+                            isInView
+                                ? "animate-fade-up animate-once animate-duration-700 animate-delay-100 animate-ease-in-out"
+                                : "opacity-0"
+                        }`}
+                    >
+                        <span className="font-medium">A Private Circle</span> of Principals
+                    </h2>
+                    <div
+                        className={`mx-auto mb-8 sm:mb-12 md:mb-16 h-0.5 sm:h-1 w-16 sm:w-20 md:w-24 bg-secondary transition-opacity duration-700 ${
+                            isInView
+                                ? "animate-fade-up animate-once animate-duration-700 animate-delay-200 animate-ease-in-out"
+                                : "opacity-0"
+                        }`}
+                    ></div>
+                </div>
 
-          <div
-              className={`relative mx-auto max-w-5xl overflow-hidden rounded-xl shadow-2xl transition-opacity duration-1000 ${
-                  isInView
-                      ? "animate-fade-up animate-once animate-duration-1000 animate-delay-400 animate-ease-in-out"
-                      : "opacity-0"
-              }`}
-          >
-            <Image
-                src="https://placehold.co/1200x600/f0f1f7/1e2756?text=Exclusive+Network"
-                alt="Exclusive network"
-                width={1200}
-                height={600}
-                className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/70 to-primary/40"></div>
-            <div className="absolute inset-0 flex items-center justify-center p-8">
-              <div className="max-w-2xl rounded-xl bg-slate-200 shadow-lg p-8 backdrop-blur-sm">
-                <h3 className="mb-6 text-2xl font-medium text-primary">
-                  A Club Without a Name, Built on Trust
-                </h3>
-                <p className="mb-6 leading-relaxed text-gray-700">
-                  We are more than an asset management firm — we represent a
-                  discreet community of like-minded principals with intersecting
-                  interests. Within this private circle, meaningful connections
-                  are made, off-market opportunities shared, and trust is quietly
-                  exchanged.
-                </p>
-                <p className="leading-relaxed text-gray-700">
-                  It is not a network we advertise. It is a space that exists
-                  because of who we serve and how we operate.
-                </p>
-              </div>
+
+                <div className="w-full flex items-center justify-center p-4 sm:p-6 md:p-8">
+                    <div
+                        className="w-full max-w-xs sm:max-w-lg md:max-w-xl lg:max-w-2xl rounded-lg sm:rounded-xl bg-slate-200 shadow-lg p-4 sm:p-6 md:p-8">
+                        <h3 className="mb-4 sm:mb-6 text-xl sm:text-2xl font-medium text-primary">
+                            A Club Without a Name, Built on Trust
+                        </h3>
+                        <p className="mb-4 sm:mb-6 text-sm sm:text-base leading-relaxed text-gray-700">
+                            We are more than an asset management firm — we represent a
+                            discreet community of like-minded principals with intersecting
+                            interests. Within this private circle, meaningful connections
+                            are made, off-market opportunities shared, and trust is quietly
+                            exchanged.
+                        </p>
+                        <p className="text-sm sm:text-base leading-relaxed text-gray-700">
+                            It is not a network we advertise. It is a space that exists
+                            because of who we serve and how we operate.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-  );
+        </section>
+    );
 }
